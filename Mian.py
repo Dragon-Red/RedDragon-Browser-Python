@@ -8,10 +8,11 @@ import tkinter.font as tf
 import tkinter.messagebox as msgbx
 
 def ButtonClick():
-    MessageBoxx = msgbx.showinfo('You Stupid!','404 Not Found\nPlease check your connection')
+    msgbx.showinfo('You Stupid!','404 Not Found\nPlease check your connection')
 
 MainWindow = tk.Tk()
 MainWindow.geometry('900x500+100+100')
+MainWindow.title('Dragon Browser v0.1')
 fontStyle = tf.Font(family="Consolas", size=50)
 MainLabel = tk.Label(MainWindow,text='Dragon Browser',font=fontStyle)
 MainLabel.place(x=200,y=50)
